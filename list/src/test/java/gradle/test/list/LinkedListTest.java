@@ -56,7 +56,12 @@ class LinkedListTest {
     }
 
     @Test
-    public void failed() {
+    public void testError() {
         throw new NullPointerException();
+    }
+    @SuppressWarnings({"ConstantConditions"})
+    @Test
+    void  testAssertionFailed(){
+        assertTrue(false);
     }
 }
